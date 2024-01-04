@@ -1,0 +1,11 @@
+[package]
+name = "tile_collision_example_xpbd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.12.1"
+# NOTE: only required until the next release of bevy_ecs_tilemap. At time of writing, the changes to
+# support bevy 0.12 are merged but not yet released.
+bevy_ecs_tilemap = { git = "https://github.com/cbrown1234/bevy_ecs_tilemap", branch = "main" }
+bevy_xpbd_2d = "0.3.0"
